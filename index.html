@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Soal ASAS - Pendidikan Pancasila Kelas VIII Bab 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            royal: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#172554',
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html, body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    /* Custom scrollbar biru elegan agar ramah iframe */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #dbeafe;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2563eb;
+      border-radius: 9999px;
+    }
+    .option-card {
+      transition: all 0.18s ease-in-out;
+    }
+    .option-card:hover:not(.disabled-opt) {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-200 selection:text-blue-950">
+
+  <!-- HEADER UTAMA (URUTAN 3 BARIS PERSIS SESUAI PEDOMAN) -->
+  <header class="bg-gradient-to-r from-blue-900 via-blue-700 to-sky-700 text-white shadow-md border-b-4 border-blue-950">
+    <div class="max-w-6xl mx-auto px-4 py-5 sm:py-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/40 border border-sky-300/40 text-sky-100 text-xs font-semibold tracking-wider uppercase mb-2">
+        <span>Asesmen Sumatif Akhir Semester</span>
+        <span>•</span>
+        <span>Literasi &amp; Numerasi HOTS</span>
+      </div>
+      <h1 class="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight uppercase drop-shadow-sm">
+        LATIHAN SOAL ASAS
+      </h1>
+      <h2 class="text-base sm:text-lg md:text-xl font-bold text-sky-100 mt-0.5 uppercase tracking-wide">
+        PENDIDIKAN PANCASILA KELAS VIII
+      </h2>
+      <p class="text-xs sm:text-sm md:text-base font-medium text-blue-100 mt-1 max-w-3xl mx-auto">
+        BAB 2: PEDOMAN NEGARAKU
+      </p>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="flex-grow max-w-6xl w-full mx-auto px-3 sm:px-5 py-5">
+
+    <!-- LAYAR AWAL: PILIH MODE -->
+    <section id="start-screen" class="bg-white rounded-2xl shadow-sm border border-blue-200 p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 rounded-lg bg-blue-100 text-blue-800 font-bold text-xs uppercase tracking-wider mb-2">
+          Petunjuk &amp; Pemilihan Mode
+        </span>
+        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+          Selamat Datang di Ruang Latihan Interaktif
+        </h3>
+        <p class="text-sm sm:text-base text-slate-600 mt-2 max-w-2xl mx-auto">
+          Paket evaluasi ini memuat <strong>25 soal HOTS (C3–C6)</strong> dengan tingkat kesulitan Sedang hingga Sangat Sulit, terdiri atas <strong>18 Pilihan Ganda</strong> dan <strong>7 Pilihan Ganda Kompleks</strong> berbasis wacana sejarah/berita, tabel kronologi, grafik survei, dan ilustrasi. Urutan soal dan opsi jawaban otomatis diacak di setiap sesi!
+        </p>
+      </div>
+
+      <!-- Ringkasan Komposisi -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-7">
+        <div class="bg-blue-50/90 border border-blue-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-blue-700 font-semibold uppercase">Total Butir</div>
+          <div class="text-xl font-extrabold text-blue-950 mt-0.5">25 Soal</div>
+        </div>
+        <div class="bg-blue-50/90 border border-blue-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-blue-700 font-semibold uppercase">Bentuk Soal</div>
+          <div class="text-sm sm:text-base font-extrabold text-blue-950 mt-1">18 PG &amp; 7 PGK</div>
+        </div>
+        <div class="bg-blue-50/90 border border-blue-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-blue-700 font-semibold uppercase">Level Kognitif</div>
+          <div class="text-xl font-extrabold text-blue-950 mt-0.5">C3 – C6</div>
+        </div>
+        <div class="bg-blue-50/90 border border-blue-200 rounded-xl p-3 text-center">
+          <div class="text-xs text-blue-700 font-semibold uppercase">Waktu Latihan</div>
+          <div class="text-xl font-extrabold text-blue-950 mt-0.5">60 Menit</div>
+        </div>
+      </div>
+
+      <!-- Pilihan Mode -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        <!-- Mode Belajar -->
+        <div class="rounded-2xl border-2 border-sky-300 bg-gradient-to-b from-sky-50/80 to-white p-5 flex flex-col justify-between hover:border-blue-600 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-sky-600 text-white text-xs font-bold uppercase tracking-wide">
+                Direkomendasikan untuk Pemahaman
+              </span>
+              <svg class="w-7 h-7 text-sky-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-slate-900">Mode Belajar</h4>
+            <ul class="text-sm text-slate-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Tanpa batas waktu (timer nonaktif) agar kamu fokus menganalisis setiap stimulus.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Tersedia tombol <strong>"Periksa Jawaban"</strong> pada setiap nomor soal.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Langsung menampilkan status <strong>Benar / Salah</strong> beserta kunci dan pembahasan lengkap.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('belajar')" class="mt-6 w-full py-3 px-4 rounded-xl bg-sky-600 hover:bg-sky-700 active:bg-sky-800 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Belajar →
+          </button>
+        </div>
+
+        <!-- Mode Latihan -->
+        <div class="rounded-2xl border-2 border-blue-400 bg-gradient-to-b from-blue-50/80 to-white p-5 flex flex-col justify-between hover:border-blue-800 transition shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full bg-blue-900 text-blue-50 text-xs font-bold uppercase tracking-wide">
+                Simulasi Ujian ASAS
+              </span>
+              <svg class="w-7 h-7 text-blue-900" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h4 class="text-lg sm:text-xl font-extrabold text-slate-900">Mode Latihan (Ujian)</h4>
+            <ul class="text-sm text-slate-700 space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-700 font-bold">✓</span>
+                <span>Dilengkapi penghitung waktu mundur <strong>60 menit</strong> layaknya ujian sesungguhnya.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-700 font-bold">✓</span>
+                <span>Kunci jawaban &amp; pembahasan disembunyikan selama pengerjaan berlangsung.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-700 font-bold">✓</span>
+                <span>Tersedia fitur <strong>Tandai Ragu-Ragu</strong>, rekap skor akhir, dan tinjauan pembahasan.</span>
+              </li>
+            </ul>
+          </div>
+          <button onclick="startQuiz('latihan')" class="mt-6 w-full py-3 px-4 rounded-xl bg-blue-800 hover:bg-blue-900 active:bg-blue-950 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+            Mulai Mode Latihan →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYAR KUIS AKTIF -->
+    <section id="quiz-screen" class="hidden">
+      <!-- Top Control Bar -->
+      <div class="bg-white rounded-2xl border border-blue-200 shadow-sm p-3 sm:p-4 mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2 sm:gap-3">
+          <span id="mode-badge" class="px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-blue-100 text-blue-900 border border-blue-300">
+            MODE BELAJAR
+          </span>
+          <span id="progress-text" class="text-xs sm:text-sm font-semibold text-slate-600">
+            Terjawab: 0 / 25
+          </span>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Timer (Hanya muncul di Mode Latihan) -->
+          <div id="timer-box" class="hidden items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 border border-blue-300 text-blue-900 font-mono font-bold text-sm">
+            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="timer-display">60:00</span>
+          </div>
+
+          <button onclick="openSwitchModal()" class="px-3 py-1.5 rounded-xl border border-blue-300 bg-blue-50 hover:bg-blue-100 text-blue-900 text-xs sm:text-sm font-semibold transition cursor-pointer">
+            Ganti Mode / Reset
+          </button>
+
+          <button id="finish-btn" onclick="openFinishModal()" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold shadow-sm transition cursor-pointer">
+            Selesai &amp; Nilai
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Utama: Kartu Soal (Kiri/Atas) + Navigasi Nomor (Kanan/Bawah) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+        
+        <!-- Area Soal (8 Kolom) -->
+        <div class="lg:col-span-8 bg-white rounded-2xl border border-blue-200 shadow-sm p-4 sm:p-6">
+          <!-- Header Soal: Nomor, Tipe, Level Kognitif, Kesulitan -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-blue-100">
+            <div class="flex items-center gap-2">
+              <span id="q-number-badge" class="px-3 py-1 rounded-xl bg-blue-700 text-white font-extrabold text-sm">
+                Soal 1 dari 25
+              </span>
+              <span id="q-type-badge" class="px-2.5 py-1 rounded-lg bg-blue-100 text-blue-900 font-bold text-xs">
+                Pilihan Ganda
+              </span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span id="q-cog-badge" class="px-2.5 py-1 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 font-bold text-xs">
+                C4 (Analisis)
+              </span>
+              <span id="q-diff-badge" class="px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-200 font-bold text-xs">
+                Sulit
+              </span>
+            </div>
+          </div>
+
+          <!-- Instruksi Khusus PG Kompleks -->
+          <div id="pgk-instruction" class="hidden mb-4 p-3 rounded-xl bg-sky-50 border-l-4 border-sky-600 text-sky-950 text-xs sm:text-sm font-semibold flex items-center gap-2">
+            <svg class="w-5 h-5 text-sky-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span id="pgk-instruction-text">PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!</span>
+          </div>
+
+          <!-- Kontainer Stimulus -->
+          <div id="stimulus-container" class="mb-5"></div>
+
+          <!-- Pertanyaan -->
+          <div id="question-text" class="text-slate-900 font-semibold text-sm sm:text-base leading-relaxed mb-4"></div>
+
+          <!-- Opsi Jawaban -->
+          <div id="options-container" class="space-y-2.5"></div>
+
+          <!-- Tombol Aksi Soal (Mode Belajar: Periksa Jawaban | Mode Latihan: Tandai Ragu-Ragu) -->
+          <div class="mt-5 pt-4 border-t border-blue-100 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+              <button id="check-answer-btn" onclick="checkCurrentAnswer()" class="hidden px-4 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Periksa Jawaban
+              </button>
+              <label id="doubt-checkbox-wrap" class="hidden inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-50 border border-amber-300 text-amber-900 text-xs sm:text-sm font-semibold cursor-pointer select-none">
+                <input type="checkbox" id="doubt-checkbox" onchange="toggleDoubt()" class="w-4 h-4 accent-amber-600 rounded cursor-pointer" />
+                <span>Tandai Ragu-Ragu</span>
+              </label>
+            </div>
+
+            <div class="flex items-center gap-2 ml-auto">
+              <button id="prev-btn" onclick="prevQuestion()" class="px-3.5 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 disabled:opacity-40 text-slate-700 font-semibold text-xs sm:text-sm transition cursor-pointer">
+                ← Sebelumnya
+              </button>
+              <button id="next-btn" onclick="nextQuestion()" class="px-4 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 disabled:opacity-40 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer">
+                Berikutnya →
+              </button>
+            </div>
+          </div>
+
+          <!-- Kotak Pembahasan (Muncul saat dicek di Mode Belajar atau saat Review Mode Latihan) -->
+          <div id="explanation-box" class="hidden mt-5 rounded-2xl p-4 sm:p-5 border-2">
+            <div class="flex items-center gap-2 mb-2">
+              <span id="exp-status-icon" class="text-lg"></span>
+              <h4 id="exp-status-title" class="font-extrabold text-sm sm:text-base"></h4>
+            </div>
+            <p id="exp-key-text" class="text-xs sm:text-sm font-bold mb-2"></p>
+            <div id="exp-detail-text" class="text-xs sm:text-sm leading-relaxed text-slate-800 space-y-1.5"></div>
+          </div>
+        </div>
+
+        <!-- Panel Navigasi Nomor Soal (4 Kolom) -->
+        <aside class="lg:col-span-4 bg-white rounded-2xl border border-blue-200 shadow-sm p-4 sm:p-5 lg:sticky lg:top-4">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Navigasi Nomor Soal</h3>
+            <span class="text-xs font-semibold text-blue-700">1 – 25</span>
+          </div>
+
+          <div id="nav-grid" class="grid grid-cols-5 gap-2 mb-4"></div>
+
+          <!-- Legenda Warna -->
+          <div class="border-t border-blue-100 pt-3 space-y-1.5 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-blue-700 inline-block"></span>
+              <span>Sedang dibuka</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-blue-100 border border-blue-400 inline-block"></span>
+              <span>Sudah dijawab</span>
+            </div>
+            <div id="legend-doubt" class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-amber-300 border border-amber-600 inline-block"></span>
+              <span>Ditandai ragu-ragu</span>
+            </div>
+            <div id="legend-eval" class="hidden space-y-1.5">
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-emerald-500 inline-block"></span>
+                <span>Jawaban Benar</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3.5 h-3.5 rounded bg-rose-500 inline-block"></span>
+                <span>Jawaban Salah</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-3.5 h-3.5 rounded bg-slate-100 border border-slate-300 inline-block"></span>
+              <span>Belum dijawab</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LAYAR HASIL AKHIR (MODE LATIHAN / REKAP) -->
+    <section id="result-screen" class="hidden bg-white rounded-2xl border border-blue-200 shadow-sm p-5 sm:p-8 max-w-4xl mx-auto">
+      <div class="text-center border-b border-blue-100 pb-6">
+        <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-900 font-bold text-xs uppercase tracking-wider mb-2">
+          Hasil Evaluasi ASAS Bab 2
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Rekapitulasi Capaian Belajar</h3>
+        <p id="result-subtitle" class="text-sm text-slate-600 mt-1">
+          Berikut adalah hasil analisis pengerjaan soal literasi dan numerasi Pendidikan Pancasila Kelas VIII Bab 2.
+        </p>
+
+        <!-- Kartu Skor Utama -->
+        <div class="mt-6 inline-flex flex-col items-center justify-center w-40 h-40 rounded-full bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-900 text-white shadow-lg border-4 border-blue-100">
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-200">Skor Akhir</span>
+          <span id="final-score" class="text-4xl sm:text-5xl font-extrabold mt-0.5">0</span>
+          <span id="final-predicate" class="text-xs font-semibold mt-1 px-2.5 py-0.5 rounded-full bg-blue-950/50">Predikat</span>
+        </div>
+      </div>
+
+      <!-- Rincian Statistik -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-6">
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-emerald-700 uppercase">Jawaban Benar</div>
+          <div id="stat-correct" class="text-2xl font-extrabold text-emerald-900 mt-1">0</div>
+        </div>
+        <div class="bg-rose-50 border border-rose-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-rose-700 uppercase">Jawaban Salah</div>
+          <div id="stat-wrong" class="text-2xl font-extrabold text-rose-900 mt-1">0</div>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-blue-700 uppercase">PG Biasa (18)</div>
+          <div id="stat-pg" class="text-2xl font-extrabold text-blue-950 mt-1">0/18</div>
+        </div>
+        <div class="bg-sky-50 border border-sky-200 rounded-xl p-3.5 text-center">
+          <div class="text-xs font-bold text-sky-700 uppercase">PG Kompleks (7)</div>
+          <div id="stat-pgk" class="text-2xl font-extrabold text-sky-950 mt-1">0/7</div>
+        </div>
+      </div>
+
+      <!-- Analisis Capaian Submateri & HOTS -->
+      <div class="bg-blue-50/60 border border-blue-200 rounded-2xl p-4 sm:p-5 mb-6">
+        <h4 class="font-extrabold text-slate-900 text-sm sm:text-base mb-3">Analisis Penguasaan Subbab Materi</h4>
+        <div id="topic-analysis" class="space-y-3 text-xs sm:text-sm"></div>
+      </div>
+
+      <!-- Tombol Aksi Hasil -->
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button onclick="enterReviewMode()" class="px-5 py-3 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm sm:text-base shadow-sm transition cursor-pointer">
+          Lihat Pembahasan Lengkap (1–25)
+        </button>
+        <button onclick="resetToHome()" class="px-5 py-3 rounded-xl border-2 border-blue-400 bg-white hover:bg-blue-50 text-blue-900 font-bold text-sm sm:text-base transition cursor-pointer">
+          Ulangi / Pilih Mode Lain
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL KONFIRMASI KUSTOM (PENGGANTI ALERT/CONFIRM) -->
+  <div id="custom-modal" class="hidden fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl border border-blue-200 max-w-md w-full p-5 sm:p-6 shadow-xl">
+      <h4 id="modal-title" class="text-lg font-extrabold text-slate-900">Konfirmasi</h4>
+      <p id="modal-message" class="text-sm text-slate-600 mt-2 leading-relaxed"></p>
+      <div class="mt-5 flex items-center justify-end gap-2.5">
+        <button onclick="closeModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 cursor-pointer">
+          Batal
+        </button>
+        <button id="modal-confirm-btn" class="px-4 py-2 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm cursor-pointer">
+          Ya, Lanjutkan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER WAJIB SESUAI PEDOMAN -->
+  <footer class="bg-blue-950 text-blue-100 border-t-4 border-sky-500 mt-8">
+    <div class="max-w-6xl mx-auto px-4 py-5 text-center text-xs sm:text-sm space-y-1">
+      <p class="font-medium text-sky-200">
+        Sumber: Buku Siswa Pendidikan Pancasila SMP/MTs Kelas VIII (Kemendikbudristek, 2023)
+      </p>
+      <p class="font-bold text-sky-400 tracking-wide">
+        <a href="https://www.pakwaronline.com" target="_blank" rel="noopener noreferrer" class="hover:underline">www.pakwaronline.com</a>
+      </p>
+      <p class="text-blue-300/80 italic font-medium">
+        Shared &amp; Educated
+      </p>
+    </div>
+  </footer>
+
+  <!-- DATA & LOGIKA APLIKASI -->
+  <script>
+    /**
+     * BANK SOAL ASAS PENDIDIKAN PANCASILA KELAS VIII - BAB 2
+     * "Pedoman Negaraku"
+     * Sebaran:
+     * - Subbab A (9 soal: 7 PG + 2 PGK) -> Proses Perumusan & Pengesahan UUD NRI Tahun 1945
+     * - Subbab B (8 soal: 6 PG + 2 PGK) -> Fungsi & Kedudukan UUD NRI Tahun 1945
+     * - Subbab C (8 soal: 5 PG + 3 PGK) -> Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal
+     */
+    const baseQuestionsData = [
+      // ==================== SUBBAB A: PROSES PERUMUSAN & PENGESAHAN UUD NRI 1945 (9 SOAL: 7 PG + 2 PGK) ====================
+
+      // SOAL 1 (C4 - Sedang - PG)
+      {
+        id: 1,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan ilustrasi agenda kenegaraan tahunan dan paparan tentang konstitusi berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-blue-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#eff6ff"/>
+                  <!-- Gedung Parlemen -->
+                  <path d="M25 65 Q90 25 155 65 Z" fill="#1d4ed8"/>
+                  <rect x="20" y="65" width="140" height="45" rx="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+                  <!-- Podium Pidato RAPBN -->
+                  <rect x="74" y="76" width="32" height="34" rx="2" fill="#1e3a8a"/>
+                  <circle cx="90" cy="66" r="7" fill="#f59e0b"/>
+                  <rect x="36" y="14" width="108" height="18" rx="5" fill="#0284c7"/>
+                  <text x="90" y="26" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle">PIDATO RAPBN 16 AGUSTUS</text>
+                  <text x="90" y="126" font-size="7.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">KONVENSI KETATANEGARAAN</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Sidang Paripurna DPR (Adaptasi Detik.com, 2021)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Dalam ilmu ketatanegaraan, konstitusi merupakan hukum dasar penyelenggaraan suatu negara yang terbagi atas konstitusi tertulis (Undang-Undang Dasar) dan konstitusi tidak tertulis (konvensi). Di Indonesia, setiap tanggal 16 Agustus menjelang HUT Kemerdekaan RI, Presiden rutin menyampaikan pidato kenegaraan pengantar Rancangan Anggaran Pendapatan dan Belanja Negara (RAPBN) di hadapan sidang paripurna DPR meskipun aturan tanggal tersebut tidak tertulis secara rinci dalam pasal UUD NRI Tahun 1945.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Berdasarkan paparan di atas, alasan utama pidato kenegaraan Presiden menjelang tanggal 17 Agustus dikategorikan sebagai bagian dari konstitusi adalah ....",
+        options: [
+          "merupakan kebiasaan ketatanegaraan yang terpelihara berulang untuk melengkapi penyelenggaraan negara",
+          "memiliki kekuatan hukum lebih tinggi daripada seluruh pasal yang tercantum dalam UUD NRI Tahun 1945",
+          "ditetapkan melalui pemungutan suara seluruh rakyat sebelum sidang tahunan parlemen diselenggarakan",
+          "menggantikan kedudukan peraturan perundang-undangan tertulis apabila terjadi keadaan darurat negara"
+        ],
+        answer: [0],
+        explanation: "Konvensi adalah aturan dasar yang tumbuh dan terpelihara dalam praktik ketatanegaraan secara berulang untuk melengkapi konstitusi tertulis tanpa bertentangan dengan UUD NRI Tahun 1945."
+      },
+
+      // SOAL 2 (C4 - Sulit - PG)
+      {
+        id: 2,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan tabel kronologi penyusunan batang tubuh UUD oleh Panitia Hukum Dasar BPUPK berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-blue-100 text-blue-950">
+                  <th class="p-2 border border-blue-200">Tahapan Rancangan</th>
+                  <th class="p-2 border border-blue-200">Tanggal Sidang</th>
+                  <th class="p-2 border border-blue-200">Sistematika Batang Tubuh</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Rancangan Pertama</td>
+                  <td class="p-2 border border-blue-200">13 Juli 1945</td>
+                  <td class="p-2 border border-blue-200">42 pasal tanpa dipilah ke dalam bab-bab</td>
+                </tr>
+                <tr class="bg-blue-50/40">
+                  <td class="p-2 border border-blue-200 font-semibold">Rancangan Kedua</td>
+                  <td class="p-2 border border-blue-200">14–15 Juli 1945</td>
+                  <td class="p-2 border border-blue-200">14 bab, aturan peralihan, dan aturan tambahan</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Rancangan Ketiga</td>
+                  <td class="p-2 border border-blue-200">16 Juli 1945</td>
+                  <td class="p-2 border border-blue-200">15 bab, 36 pasal, 6 pasal Aturan Peralihan, 1 pasal Aturan Tambahan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Perubahan sistematika dari Rancangan Pertama hingga Rancangan Ketiga pada tabel di atas menunjukkan bahwa proses perumusan UUD oleh para pendiri bangsa ....",
+        options: [
+          "dilakukan melalui pembahasan cermat dengan menampung masukan konstruktif seluruh anggota sidang",
+          "mengalami kebuntuan berkepanjangan karena tiap tokoh memaksakan kepentingan daerah asalnya",
+          "disusun tergesa-gesa tanpa mempertimbangkan pengelompokan materi pokok ketatanegaraan",
+          "hanya dikerjakan oleh satu orang ketua panitia tanpa melibatkan pendapat anggota BPUPK lainnya"
+        ],
+        answer: [0],
+        explanation: "Perubahan dari 42 pasal tanpa bab menjadi 15 bab dan 36 pasal yang sistematis membuktikan ketelitian serta keterbukaan Panitia Kecil pimpinan Prof. Dr. Soepomo dalam menyerap masukan anggota sidang BPUPK."
+      },
+
+      // SOAL 3 (C4 - Sedang - PGK)
+      {
+        id: 3,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Cermati informasi mengenai pembentukan dua Panitia Kecil pada masa sidang BPUPK berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Selama rangkaian sidang BPUPK tahun 1945, dibentuk dua kelompok Panitia Kecil dengan tugas berbeda. Panitia Kecil pertama dibentuk pada 1 Juni 1945 diketuai Ir. Sukarno (8 anggota) untuk menampung usulan rumusan dasar negara. Adapun Panitia Kecil kedua dibentuk dalam rapat Panitia Hukum Dasar pada 11 Juli 1945 diketuai Prof. Dr. Soepomo (6 anggota) untuk menyusun rancangan batang tubuh UUD.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan paparan sejarah di atas, pilihlah dua pernyataan yang tepat mengenai perbedaan dan keterkaitan kedua panitia tersebut!",
+        options: [
+          "Panitia Kecil 1 Juni fokus menghimpun gagasan dasar negara, sedangkan Panitia Kecil 11 Juli merancang pasal UUD",
+          "Mr. A.A. Maramis dan H. Agoes Salim termasuk tokoh yang berperan dalam penyusunan rancangan batang tubuh UUD",
+          "Kedua Panitia Kecil tersebut dibentuk setelah Indonesia memproklamasikan kemerdekaan pada Agustus 1945",
+          "Panitia Kecil pimpinan Prof. Dr. Soepomo bertugas membubarkan seluruh lembaga pemerintahan bentukan Jepang"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 dan 2 benar: Panitia Kecil 1 Juni 1945 menginventarisasi rumusan dasar negara, sedangkan Panitia Kecil Soepomo (beranggotakan Wongsonegoro, Soebardjo, A.A. Maramis, Soekiman, dan Agoes Salim) merancang batang tubuh UUD."
+      },
+
+      // SOAL 4 (C5 - Sangat Sulit - PG)
+      {
+        id: 4,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-indigo-950 mb-2">Cermati kutipan penjelasan Prof. Dr. Soepomo dalam Rapat Besar BPUPK tanggal 15 Juli 1945 berikut!</p>
+            <blockquote class="italic text-slate-800 text-xs sm:text-sm leading-relaxed border-l-4 border-blue-600 pl-3">
+              "Rancangan UUD yang disusun oleh Panitia Hukum Dasar merupakan rancangan UUD yang bersifat singkat dan supel. Sebuah UUD hanya memuat garis-garis besar sebagai instruksi kepada pemerintah pusat dan penyelenggara negara lainnya untuk menyelenggarakan kehidupan negara dan kesejahteraan sosial, sedangkan aturan rinci dituangkan dalam undang-undang."
+            </blockquote>
+            <div class="text-[11px] text-slate-500 mt-2 text-right">Sumber: Risalah Sidang BPUPK 15 Juli 1945</div>
+          </div>
+        `,
+        question: "Berdasarkan penjelasan Prof. Dr. Soepomo tersebut, evaluasi paling tepat mengapa penyusunan UUD yang 'singkat dan supel' sangat menguntungkan bagi negara Indonesia adalah ....",
+        options: [
+          "konstitusi tidak cepat usang karena mampu menyesuaikan diri dengan dinamika perkembangan zaman",
+          "pemerintah dapat mengubah isi pasal konstitusi setiap saat tanpa melalui persetujuan parlemen",
+          "seluruh persoalan teknis kehidupan warga negara cukup diatur lewat kebiasaan tanpa undang-undang",
+          "lembaga peradilan tidak perlu menguji kesesuaian undang-undang terhadap aturan dasar negara"
+        ],
+        answer: [0],
+        explanation: "Sifat singkat dan supel membuat UUD NRI Tahun 1945 hanya memuat aturan-aturan pokok (garis besar), sementara aturan teknis yang dinamis diatur dalam undang-undang turunannya sehingga konstitusi tetap relevan mengikuti zaman."
+      },
+
+      // SOAL 5 (C4 - Sulit - PG)
+      {
+        id: 5,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan ilustrasi peristiwa sejarah dan kronologi pembentukan PPKI berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-blue-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#dbeafe"/>
+                  <!-- Gedung Sidang PPKI -->
+                  <rect x="24" y="34" width="132" height="78" rx="6" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+                  <rect x="24" y="34" width="132" height="22" rx="4" fill="#1e40af"/>
+                  <text x="90" y="48" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">SIDANG PPKI 18 AGUSTUS 1945</text>
+                  <!-- Tokoh Pimpinan -->
+                  <circle cx="65" cy="74" r="9" fill="#2563eb"/>
+                  <path d="M52 104 C52 88 78 88 78 104 Z" fill="#3b82f6"/>
+                  <circle cx="115" cy="74" r="9" fill="#0284c7"/>
+                  <path d="M102 104 C102 88 128 88 128 104 Z" fill="#0ea5e9"/>
+                  <text x="90" y="126" font-size="7" font-weight="bold" fill="#1e3a8a" text-anchor="middle">27 ANGGOTA PERWAKILAN RAKYAT</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Sidang PPKI (Adaptasi Arsip Nasional RI, 1945)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Sehari setelah Proklamasi Kemerdekaan 17 Agustus 1945, PPKI bersidang pada 18 Agustus 1945. Sebelum rapat dimulai, Ir. Sukarno selaku ketua PPKI menambah enam orang anggota baru dari berbagai golongan sehingga jumlah total anggota menjadi 27 orang.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Alasan strategis yang melatarbelakangi keputusan Ir. Sukarno menambah enam anggota PPKI sebelum sidang tanggal 18 Agustus 1945 dimulai adalah ....",
+        options: [
+          "menegaskan bahwa PPKI murni mewakili seluruh rakyat Indonesia dan bukan badan bentukan Jepang",
+          "memenuhi perintah panglima militer Jepang agar sidang pengesahan UUD segera diselesaikan",
+          "menggantikan seluruh anggota lama yang tidak dapat hadir ke Jakarta akibat perang dunia kedua",
+          "membagi tugas penyusunan konstitusi kepada perwakilan negara-negara tetangga di Asia Tenggara"
+        ],
+        answer: [0],
+        explanation: "Penambahan enam anggota oleh Ir. Sukarno tanpa sepengetahuan Jepang bertujuan menepis anggapan bahwa PPKI adalah badan bentukan Jepang, sekaligus menjadikan PPKI bersifat representatif bagi seluruh rakyat Indonesia."
+      },
+
+      // SOAL 6 (C4 - Sulit - PGK)
+      {
+        id: 6,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga perubahan yang disepakati pada 18 Agustus 1945!",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan perbandingan naskah rancangan akhir BPUPK dengan naskah yang disahkan PPKI pada 18 Agustus 1945 berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-blue-100 text-blue-950">
+                  <th class="p-2 border border-blue-200">Bagian Naskah</th>
+                  <th class="p-2 border border-blue-200">Rancangan BPUPK</th>
+                  <th class="p-2 border border-blue-200">Pengesahan PPKI (18 Agustus 1945)</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Pembukaan Alinea 4</td>
+                  <td class="p-2 border border-blue-200">...dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya</td>
+                  <td class="p-2 border border-blue-200 font-semibold text-blue-900">Ketuhanan Yang Maha Esa</td>
+                </tr>
+                <tr class="bg-blue-50/40">
+                  <td class="p-2 border border-blue-200 font-semibold">Pasal 6 ayat (1)</td>
+                  <td class="p-2 border border-blue-200">Presiden ialah orang Indonesia asli yang beragama Islam</td>
+                  <td class="p-2 border border-blue-200 font-semibold text-blue-900">Presiden ialah orang Indonesia asli</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Pasal 29 ayat (1)</td>
+                  <td class="p-2 border border-blue-200">Negara berdasar atas Ketuhanan, dengan kewajiban menjalankan syariat Islam...</td>
+                  <td class="p-2 border border-blue-200 font-semibold text-blue-900">Negara berdasar atas Ketuhanan Yang Maha Esa</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan tabel perbandingan historis di atas, pilihlah tiga kesimpulan yang tepat!",
+        options: [
+          "Perubahan sila pertama pada Pembukaan diikuti penyesuaian selaras pada Pasal 6 ayat (1) dan Pasal 29 ayat (1)",
+          "Kesepakatan tokoh Islam dan nasionalis menunjukkan semangat mendahulukan persatuan bangsa di atas golongan",
+          "Perubahan tersebut menjamin kesetaraan hak warga negara dalam menduduki jabatan publik tanpa diskriminasi",
+          "Penghapusan tujuh kata pada Piagam Jakarta membuat negara Indonesia tidak lagi mengakui nilai-nilai ketuhanan"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1, 2, dan 3 benar. Perubahan rumusan sila pertama di Pembukaan otomatis diselaraskan dengan Pasal 6 ayat (1) dan Pasal 29 ayat (1) demi persatuan dan kesetaraan seluruh warga negara Indonesia."
+      },
+
+      // SOAL 7 (C3 - Sedang - PG)
+      {
+        id: 7,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Cermati tiga keputusan penting Sidang PPKI tanggal 18 Agustus 1945 berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Dalam sidang bersejarah tanggal 18 Agustus 1945, PPKI menetapkan tiga keputusan fundamental bagi berdirinya negara Indonesia yang baru merdeka: (1) mengesahkan UUD 1945, (2) menetapkan Ir. Sukarno sebagai Presiden dan Drs. Moh. Hatta sebagai Wakil Presiden RI, serta (3) membentuk Komite Nasional Indonesia Pusat (KNIP).
+            </p>
+          </div>
+        `,
+        question: "Alasan mendesak dibentuknya Komite Nasional Indonesia Pusat (KNIP) pada keputusan ketiga sidang PPKI tersebut adalah ....",
+        options: [
+          "membantu tugas Presiden menjalankan roda pemerintahan sebelum lembaga MPR dan DPR terbentuk",
+          "menggantikan kedudukan Presiden dan Wakil Presiden apabila terjadi pergantian kabinet pemerintahan",
+          "melakukan perundingan militer dengan pasukan Sekutu yang mendarat di pelabuhan pulau Jawa",
+          "menyusun ulang naskah Proklamasi Kemerdekaan agar diakui oleh pemerintah kolonial Belanda"
+        ],
+        answer: [0],
+        explanation: "Saat baru merdeka 18 Agustus 1945, Indonesia belum memiliki MPR dan DPR hasil pemilu, sehingga dibentuk Komite Nasional (KNIP) untuk membantu Presiden menjalankan pemerintahan."
+      },
+
+      // SOAL 8 (C4 - Sedang - PG)
+      {
+        id: 8,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan perbandingan antara tata tertib sekolah dan konstitusi negara berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Di setiap sekolah terdapat tata tertib yang mengatur hak dan kewajiban siswa, guru, serta karyawan agar proses belajar berjalan tertib dan adil. Demikian pula dalam sebuah negara, diperlukan hukum dasar yang disebut konstitusi untuk mengatur jalannya pemerintahan serta melindungi hak-hak dasar warga negara dari kesewenang-wenangan penguasa.
+            </p>
+          </div>
+        `,
+        question: "Dampak utama yang akan terjadi dalam kehidupan bernegara apabila suatu negara tidak memiliki konstitusi adalah ....",
+        options: [
+          "penyelenggaraan kekuasaan berpotensi berjalan sewenang-wenang dan hak warga negara tidak terlindungi",
+          "kegiatan perekonomian masyarakat berkembang lebih bebas karena tidak dibatasi aturan pajak negara",
+          "hubungan kerja sama diplomatik dengan negara lain menjadi lebih mudah tanpa perjanjian tertulis",
+          "seluruh warga negara otomatis hidup rukun karena tidak ada perbedaan pandangan hukum di masyarakat"
+        ],
+        answer: [0],
+        explanation: "Pada awalnya konstitusi dibuat untuk membatasi kekuasaan penguasa yang absolut serta menjamin hak-hak rakyat agar tidak terjadi penindasan dan kekacauan dalam bernegara."
+      },
+
+      // SOAL 9 (C6 - Sangat Sulit - PG)
+      {
+        id: 9,
+        subbab: "A. Proses Perumusan dan Pengesahan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-indigo-950 mb-2">Cermati skenario proyek literasi sejarah konstitusi di SMP Nusantara berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Kelompokmu diminta merancang pameran mini di mading sekolah tentang keteladanan para tokoh perumus UUD NRI Tahun 1945 (seperti Ir. Sukarno, Drs. Moh. Hatta, Prof. Dr. Soepomo, dan dr. Radjiman Wedyodiningrat) agar relevan dengan tantangan pergaulan remaja saat ini.
+            </p>
+          </div>
+        `,
+        question: "Konsep penyajian proyek mading yang paling tepat untuk menanamkan nilai keteladanan perumus UUD 1945 kepada siswa SMP adalah ....",
+        options: [
+          "infografis alur musyawarah BPUPK–PPKI yang dihubungkan dengan cara berdiskusi santun di kelas",
+          "daftar panjang pasal-pasal hukum pidana yang disertai ancaman hukuman bagi pelanggar tata tertib",
+          "kumpulan foto gedung pemerintahan masa kolonial tanpa penjelasan peran tokoh perumus konstitusi",
+          "artikel yang membandingkan keunggulan latar belakang suku tiap tokoh perumus UUD NRI Tahun 1945"
+        ],
+        answer: [0],
+        explanation: "Menyajikan alur musyawarah para tokoh pendiri bangsa secara visual (infografis) yang dikaitkan langsung dengan praktik berdiskusi santun dan menghargai perbedaan di kelas adalah kreasi edukatif terbaik (C6)."
+      },
+
+      // ==================== SUBBAB B: FUNGSI & KEDUDUKAN UUD NRI TAHUN 1945 (8 SOAL: 6 PG + 2 PGK) ====================
+
+      // SOAL 10 (C4 - Sulit - PG - Berita Uji Materi Ojek Online)
+      {
+        id: 10,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Simak cuplikan berita mengenai permohonan uji materi undang-undang ke Mahkamah Konstitusi berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-sky-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#e0f2fe"/>
+                  <!-- Gedung MK Pilar -->
+                  <polygon points="24,48 90,18 156,48" fill="#1e3a8a"/>
+                  <rect x="30" y="48" width="120" height="58" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+                  <line x1="50" y1="48" x2="50" y2="106" stroke="#2563eb" stroke-width="5"/>
+                  <line x1="76" y1="48" x2="76" y2="106" stroke="#2563eb" stroke-width="5"/>
+                  <line x1="104" y1="48" x2="104" y2="106" stroke="#2563eb" stroke-width="5"/>
+                  <line x1="130" y1="48" x2="130" y2="106" stroke="#2563eb" stroke-width="5"/>
+                  <rect x="20" y="106" width="140" height="10" rx="2" fill="#1d4ed8"/>
+                  <text x="90" y="130" font-size="7.2" font-weight="bold" fill="#1e3a8a" text-anchor="middle">JUDICIAL REVIEW DI MK</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Mahkamah Konstitusi (Liputan6.com, 2018)</span>
+              </div>
+              <div>
+                <h5 class="font-bold text-slate-900 text-xs sm:text-sm mb-1">Perkumpulan Ojek Daring Ajukan Uji Materi UU Lalu Lintas ke MK</h5>
+                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                  Komite Aksi Transportasi Online (KATO) mengajukan uji materi (<em>judicial review</em>) Pasal 138 ayat (3) UU Nomor 22 Tahun 2009 tentang Lalu Lintas dan Angkutan Jalan ke Mahkamah Konstitusi. Pasal tersebut dinilai belum mengakomodasi transportasi daring sehingga dianggap bertentangan dengan Pasal 27 ayat (2) UUD NRI Tahun 1945 mengenai hak atas pekerjaan dan penghidupan yang layak.
+                </p>
+                <div class="text-[11px] text-slate-500 mt-1.5">Sumber berita: Liputan6.com (2018)</div>
+              </div>
+            </div>
+          </div>
+        `,
+        question: "Peristiwa pengajuan <em>judicial review</em> oleh perkumpulan pengemudi ojek daring tersebut menunjukkan salah satu fungsi utama UUD NRI Tahun 1945, yaitu sebagai ....",
+        options: [
+          "alat kontrol untuk menguji apakah suatu undang-undang sudah sesuai atau bertentangan dengan konstitusi",
+          "pedoman teknis yang mengatur tarif angkutan umum berbasis aplikasi digital di seluruh wilayah Indonesia",
+          "aturan pengganti undang-undang lalu lintas yang ditetapkan langsung oleh ketua lembaga peradilan",
+          "instrumen untuk menghapus kewenangan pemerintah dalam mengatur keselamatan transportasi jalan raya"
+        ],
+        answer: [0],
+        explanation: "UUD NRI Tahun 1945 berfungsi sebagai alat kontrol (penguji) untuk mengecek apakah peraturan perundang-undangan yang kedudukannya lebih rendah sudah selaras dengan UUD NRI Tahun 1945."
+      },
+
+      // SOAL 11 (C4 - Sulit - PGK)
+      {
+        id: 11,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan tabel perbandingan kewenangan uji materi peraturan perundang-undangan di Indonesia berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-blue-100 text-blue-950">
+                  <th class="p-2 border border-blue-200">Lembaga Yudikatif</th>
+                  <th class="p-2 border border-blue-200">Objek Peraturan yang Diuji</th>
+                  <th class="p-2 border border-blue-200">Batu Uji (Dasar Acuan)</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Mahkamah Konstitusi (MK)</td>
+                  <td class="p-2 border border-blue-200">Undang-Undang (UU)</td>
+                  <td class="p-2 border border-blue-200">UUD NRI Tahun 1945</td>
+                </tr>
+                <tr class="bg-blue-50/40">
+                  <td class="p-2 border border-blue-200 font-semibold">Mahkamah Agung (MA)</td>
+                  <td class="p-2 border border-blue-200">Peraturan di bawah UU (PP, Perpres, Perda)</td>
+                  <td class="p-2 border border-blue-200">Undang-Undang (UU)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan tabel pembagian kewenangan di atas, pilihlah dua analisis yang tepat!",
+        options: [
+          "Apabila sebuah Peraturan Pemerintah dinilai bertentangan dengan Undang-Undang, pengujiannya menjadi wewenang MA",
+          "Pengujian pasal Undang-Undang terhadap UUD NRI Tahun 1945 merupakan kewenangan konstitusional MK",
+          "Mahkamah Agung berwenang membatalkan pasal dalam UUD NRI Tahun 1945 apabila dianggap tidak sesuai Perda",
+          "Peraturan Daerah yang bertentangan dengan Undang-Undang harus diajukan uji materinya kepada Mahkamah Konstitusi"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 dan 2 benar: Mahkamah Agung (MA) menguji peraturan perundang-undangan di bawah UU terhadap UU, sedangkan Mahkamah Konstitusi (MK) menguji UU terhadap UUD NRI Tahun 1945."
+      },
+
+      // SOAL 12 (C4 - Sedang - PG)
+      {
+        id: 12,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan bagan lini masa perkembangan konstitusi yang pernah berlaku di Indonesia berikut!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 text-center text-xs">
+              <div class="p-2.5 rounded-xl bg-white border border-blue-300">
+                <div class="font-extrabold text-blue-900">1945–1949</div>
+                <div class="text-slate-600 mt-0.5">UUD 1945 (Periode I)</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white border border-blue-300">
+                <div class="font-extrabold text-blue-900">1949–1950</div>
+                <div class="text-slate-600 mt-0.5">Konstitusi RIS</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white border border-blue-300">
+                <div class="font-extrabold text-blue-900">1950–1959</div>
+                <div class="text-slate-600 mt-0.5">UUDS 1950</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white border border-blue-300">
+                <div class="font-extrabold text-blue-900">1959–1999</div>
+                <div class="text-slate-600 mt-0.5">UUD 1945 (Dekrit)</div>
+              </div>
+              <div class="p-2.5 rounded-xl bg-blue-700 text-white border border-blue-900">
+                <div class="font-extrabold">1999–Kini</div>
+                <div class="text-blue-100 mt-0.5">UUD NRI 1945 Amendemen</div>
+              </div>
+            </div>
+          </div>
+        `,
+        question: "Berdasarkan lini masa sejarah konstitusi Indonesia di atas, pernyataan yang paling tepat mengenai dinamika ketatanegaraan Indonesia adalah ....",
+        options: [
+          "Indonesia sempat menerapkan konstitusi negara serikat sebelum akhirnya kembali ke UUD 1945",
+          "UUD NRI Tahun 1945 tidak pernah mengalami perubahan pasal sejak disahkan pada tahun 1945",
+          "UUDS 1950 diberlakukan hingga era reformasi tahun 1999 untuk memperkuat sistem presidensial",
+          "Konstitusi RIS berlaku selama sepuluh tahun penuh sebelum digantikan oleh Dekrit Presiden 1959"
+        ],
+        answer: [0],
+        explanation: "Indonesia pernah memberlakukan Konstitusi RIS (27 Des 1949 – 17 Agt 1950) yang berbentuk negara serikat, lalu kembali ke negara kesatuan melalui UUDS 1950 dan kembali ke UUD 1945 lewat Dekrit Presiden 5 Juli 1959."
+      },
+
+      // SOAL 13 (C5 - Sulit - PG)
+      {
+        id: 13,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-indigo-950 mb-2">Cermati informasi mengenai empat kali amendemen UUD NRI Tahun 1945 pada era reformasi (1999–2002) berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Pada awal era reformasi, MPR melakukan empat kali perubahan (amendemen) terhadap UUD NRI Tahun 1945, yaitu pada tahun 1999, 2000, 2001, dan 2002. Amendemen tersebut menghasilkan pembaruan penting, antara lain pembatasan masa jabatan presiden, penataan ulang struktur lembaga tinggi negara, penguatan jaminan Hak Asasi Manusia (HAM), serta pemberlakuan otonomi daerah.
+            </p>
+          </div>
+        `,
+        question: "Evaluasi yang paling tepat mengenai tujuan utama dilakukannya empat kali amendemen UUD NRI Tahun 1945 pada era reformasi adalah ....",
+        options: [
+          "menyempurnakan aturan dasar agar kekuasaan negara tidak terpusat dan hak warga semakin terlindungi",
+          "mengganti bentuk negara kesatuan menjadi negara federasi agar setiap daerah berdiri mandiri sepenuhnya",
+          "menghapus seluruh fungsi pengawasan lembaga perwakilan rakyat terhadap kebijakan pemerintah pusat",
+          "membatasi hak warga negara dalam menyampaikan pendapat di muka umum demi stabilitas keamanan"
+        ],
+        answer: [0],
+        explanation: "Empat kali amendemen UUD NRI Tahun 1945 bertujuan memperkuat sistem demokrasi dan negara hukum melalui pembatasan masa jabatan presiden, <em>checks and balances</em> antarlembaga negara, jaminan HAM, dan otonomi daerah."
+      },
+
+      // SOAL 14 (C3 - Sedang - PG)
+      {
+        id: 14,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan kedudukan UUD NRI Tahun 1945 dalam tata urutan peraturan perundang-undangan nasional berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Sebagai hukum dasar tertulis tertinggi di Indonesia, UUD NRI Tahun 1945 menempati puncak hierarki peraturan perundang-undangan. Seluruh peraturan di bawahnya—mulai dari Undang-Undang, Peraturan Pemerintah, Peraturan Presiden, hingga Peraturan Daerah—disusun untuk menjabarkan aturan pokok dalam UUD NRI Tahun 1945.
+            </p>
+          </div>
+        `,
+        question: "Apabila sebuah pemerintah kabupaten berencana menerbitkan Peraturan Daerah (Perda) tentang pengelolaan lingkungan hidup, sikap penyusun Perda yang sesuai dengan kedudukan UUD NRI Tahun 1945 adalah ....",
+        options: [
+          "memastikan seluruh isi pasal Perda sejalan dan tidak bertentangan dengan UUD NRI Tahun 1945 serta UU",
+          "menjadikan kebiasaan daerah sebagai satu-satunya rujukan tanpa perlu mengecek kesesuaian dengan konstitusi",
+          "mencantumkan ketentuan bahwa Perda tersebut berlaku lebih tinggi daripada peraturan pemerintah pusat",
+          "mengesahkan Perda secara tertutup tanpa membuka ruang masukan dari masyarakat daerah setempat"
+        ],
+        answer: [0],
+        explanation: "Karena UUD NRI Tahun 1945 adalah hukum tertulis tertinggi dan pedoman penyusunan peraturan perundang-undangan, maka Perda wajib selaras dan tidak boleh bertentangan dengan peraturan di atasnya."
+      },
+
+      // SOAL 15 (C4 - Sulit - PGK)
+      {
+        id: 15,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga pernyataan yang paling sesuai!",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Cermati uraian mengenai tiga fungsi utama UUD NRI Tahun 1945 dalam kehidupan bernegara berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Dalam sistem ketatanegaraan Indonesia, UUD NRI Tahun 1945 menjalankan tiga fungsi pokok: (1) sebagai alat kontrol kesesuaian peraturan perundang-undangan di bawahnya, (2) sebagai pedoman dalam mengatur penyelenggaraan kehidupan bermasyarakat, berbangsa, dan bernegara, serta (3) sebagai pedoman dalam menyusun peraturan perundang-undangan.
+            </p>
+          </div>
+        `,
+        question: "Pilihlah tiga contoh praktik kenegaraan yang mencerminkan pelaksanaan fungsi-fungsi UUD NRI Tahun 1945 di atas!",
+        options: [
+          "Presiden menjalankan tugas pemerintahan berdasarkan batas kewenangan yang diatur dalam pasal-pasal UUD",
+          "DPR merancang Undang-Undang Pendidikan dengan berpedoman pada amanat Pasal 31 UUD NRI Tahun 1945",
+          "Mahkamah Konstitusi membatalkan pasal undang-undang yang terbukti melanggar hak konstitusional warga",
+          "Kepala daerah menetapkan aturan pajak daerah baru meskipun bertentangan dengan undang-undang nasional"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1 (pedoman penyelenggaraan negara), 2 (pedoman penyusunan peraturan), dan 3 (alat kontrol konstitusionalitas) sesuai dengan tiga fungsi UUD NRI Tahun 1945."
+      },
+
+      // SOAL 16 (C5 - Sangat Sulit - PG)
+      {
+        id: 16,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan perbandingan jumlah pasal dan ayat UUD NRI Tahun 1945 sebelum dan sesudah amendemen berikut!</p>
+            <svg class="w-full max-w-lg h-44 mx-auto" viewBox="0 0 420 175" fill="none">
+              <rect width="420" height="175" rx="10" fill="#eff6ff"/>
+              <line x1="50" y1="135" x2="390" y2="135" stroke="#1e3a8a" stroke-width="1.5"/>
+              <!-- Sebelum Amendemen: 37 Pasal, 49 Ayat -->
+              <rect x="85" y="95" width="42" height="40" rx="4" fill="#60a5fa"/>
+              <text x="106" y="88" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle">37 Pasal</text>
+              <rect x="135" y="82" width="42" height="53" rx="4" fill="#3b82f6"/>
+              <text x="156" y="75" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle">49 Ayat</text>
+              <text x="131" y="152" font-size="8.5" font-weight="bold" fill="#334155" text-anchor="middle">Sebelum Amendemen</text>
+              <!-- Sesudah Amendemen: 73 Pasal, 170 Ayat -->
+              <rect x="245" y="58" width="42" height="77" rx="4" fill="#1d4ed8"/>
+              <text x="266" y="51" font-size="9" font-weight="bold" fill="#1e3a8a" text-anchor="middle">73 Pasal</text>
+              <rect x="295" y="22" width="42" height="113" rx="4" fill="#0284c7"/>
+              <text x="316" y="15" font-size="9" font-weight="bold" fill="#0369a1" text-anchor="middle">170 Ayat</text>
+              <text x="291" y="152" font-size="8.5" font-weight="bold" fill="#334155" text-anchor="middle">Sesudah Amendemen</text>
+              <text x="210" y="168" font-size="7.5" fill="#1e40af" text-anchor="middle">Sumber: Sekretariat Jenderal MPR RI (Panduan Pemasyarakatan UUD NRI 1945)</text>
+            </svg>
+          </div>
+        `,
+        question: "Berdasarkan grafik perbandingan jumlah pasal dan ayat di atas (bertambah 36 pasal dan 121 ayat setelah amendemen), kesimpulan evaluasi yang paling tepat adalah ....",
+        options: [
+          "pengaturan jaminan hak warga negara serta pembagian kekuasaan negara menjadi jauh lebih jelas dan rinci",
+          "UUD NRI Tahun 1945 berubah sifat menjadi undang-undang teknis yang menggantikan seluruh peraturan daerah",
+          "pertambahan jumlah ayat menyebabkan kedudukan Pancasila dalam Pembukaan ikut mengalami perubahan teks",
+          "proses pengambilan keputusan kenegaraan menjadi lebih rumit sehingga memperlambat pelayanan masyarakat"
+        ],
+        answer: [0],
+        explanation: "Penambahan jumlah pasal dan ayat (termasuk masuknya Bab XA tentang HAM, otonomi daerah, dan penegasan tugas lembaga negara) memperjelas perlindungan hak warga serta pembatasan kekuasaan negara."
+      },
+
+      // SOAL 17 (C6 - Sangat Sulit - PG)
+      {
+        id: 17,
+        subbab: "B. Fungsi dan Kedudukan UUD NRI Tahun 1945",
+        type: "pg",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Cermati studi kasus tantangan regulasi di era perkembangan teknologi kecerdasan buatan (AI) berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Perkembangan pesat kecerdasan buatan (<em>Artificial Intelligence</em>) saat ini memunculkan persoalan baru terkait perlindungan hak cipta karya seni serta keamanan data pribadi warga negara yang belum terbayangkan pada tahun 1945.
+            </p>
+          </div>
+        `,
+        question: "Berdasarkan sifat UUD NRI Tahun 1945 yang 'singkat dan supel', langkah hukum paling tepat yang dapat dirancang negara untuk menjawab tantangan era AI tersebut adalah ....",
+        options: [
+          "membentuk undang-undang khusus tentang tata kelola AI yang berlandaskan prinsip HAM dalam UUD 1945",
+          "mengubah seluruh isi Pembukaan UUD NRI Tahun 1945 agar memuat istilah teknologi digital modern",
+          "menghentikan pemanfaatan seluruh teknologi kecerdasan buatan hingga dilakukan amendemen konstitusi",
+          "menyerahkan pengaturan keamanan data warga sepenuhnya kepada perusahaan teknologi pemilik aplikasi"
+        ],
+        answer: [0],
+        explanation: "Karena UUD NRI Tahun 1945 bersifat singkat dan supel (memuat garis besar perlindungan HAM dan kesejahteraan), persoalan teknis baru seperti AI cukup diatur melalui Undang-Undang baru yang berlandaskan nilai UUD 1945."
+      },
+
+      // ==================== SUBBAB C: BERANI MENJALANKAN UUD NRI TAHUN 1945 (8 SOAL: 5 PG + 3 PGK) ====================
+
+      // SOAL 18 (C4 - Sedang - PG)
+      {
+        id: 18,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Cermati lima kesepakatan dasar MPR terkait perubahan UUD NRI Tahun 1945 (Ketetapan MPR No. IX/MPR/1999) berikut!</p>
+            <ul class="text-xs sm:text-sm text-slate-700 space-y-1 list-disc pl-5">
+              <li>Tidak mengubah Pembukaan UUD NRI Tahun 1945.</li>
+              <li>Tetap mempertahankan Negara Kesatuan Republik Indonesia (NKRI).</li>
+              <li>Mempertegas sistem pemerintahan presidensial.</li>
+              <li>Penjelasan UUD NRI Tahun 1945 yang memuat hal-hal normatif dimasukkan ke dalam pasal-pasal.</li>
+              <li>Melakukan perubahan dengan cara adendum (menambahkan naskah perubahan tanpa menghapus naskah asli).</li>
+            </ul>
+          </div>
+        `,
+        question: "Makna penting dari kesepakatan kelima, yaitu melakukan perubahan dengan cara 'adendum', adalah ....",
+        options: [
+          "masyarakat tetap dapat membaca naskah asli tahun 1945 sekaligus mempelajari perkembangan perubahannya",
+          "naskah asli UUD 1945 otomatis dinyatakan tidak berlaku lagi setelah naskah amendemen disahkan MPR",
+          "setiap warga negara berhak mengusulkan penambahan pasal baru secara langsung melalui media sosial",
+          "penjelasan UUD 1945 dipisahkan menjadi dokumen tersendiri di luar sistem hukum nasional Indonesia"
+        ],
+        answer: [0],
+        explanation: "Perubahan secara adendum berarti naskah perubahan dilampirkan pada naskah asli tanpa menghapus naskah asli UUD 1945, sehingga jejak sejarah dan dinamika konstitusi tetap utuh dan mudah dipelajari."
+      },
+
+      // SOAL 19 (C4 - Sulit - PG - Tabel Survei Kedisiplinan)
+      {
+        id: 19,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4 overflow-x-auto">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan tabel hasil pemantauan tingkat kepatuhan siswa terhadap tata tertib sekolah selama empat minggu berikut!</p>
+            <table class="w-full text-xs sm:text-sm text-left border-collapse">
+              <thead>
+                <tr class="bg-blue-100 text-blue-950">
+                  <th class="p-2 border border-blue-200">Periode Pemantauan</th>
+                  <th class="p-2 border border-blue-200">Persentase Kepatuhan Siswa</th>
+                  <th class="p-2 border border-blue-200">Catatan Evaluasi Tim Kesiswaan</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Minggu Kesatu</td>
+                  <td class="p-2 border border-blue-200">95%</td>
+                  <td class="p-2 border border-blue-200">Awal bulan, kedisiplinan seragam sangat baik</td>
+                </tr>
+                <tr class="bg-blue-50/40">
+                  <td class="p-2 border border-blue-200 font-semibold">Minggu Kedua</td>
+                  <td class="p-2 border border-blue-200">96%</td>
+                  <td class="p-2 border border-blue-200">Peningkatan ketepatan waktu hadir di kelas</td>
+                </tr>
+                <tr>
+                  <td class="p-2 border border-blue-200 font-semibold">Minggu Ketiga</td>
+                  <td class="p-2 border border-blue-200 font-bold text-emerald-700">98%</td>
+                  <td class="p-2 border border-blue-200">Tingkat kedisiplinan tertinggi selama satu bulan</td>
+                </tr>
+                <tr class="bg-blue-50/40">
+                  <td class="p-2 border border-blue-200 font-semibold">Minggu Keempat</td>
+                  <td class="p-2 border border-blue-200 font-bold text-rose-700">92%</td>
+                  <td class="p-2 border border-blue-200">Penurunan terjadi menjelang libur akhir bulan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `,
+        question: "Berdasarkan data numerasi pada tabel di atas, langkah tindak lanjut paling tepat yang perlu dilakukan pengurus OSIS bersama siswa untuk menstabilkan pelaksanaan tata tertib sebagai wujud ketaatan terhadap konstitusi adalah ....",
+        options: [
+          "melakukan refleksi bersama pada akhir minggu ketiga agar penurunan kedisiplinan sebesar 6% tidak terulang",
+          "menghapus seluruh sanksi keterlambatan pada minggu keempat karena mayoritas siswa sudah patuh aturan",
+          "membiarkan penurunan angka kepatuhan pada minggu keempat karena persentasenya masih di atas sembilan puluh",
+          "mengganti seluruh tata tertib sekolah setiap bulan agar siswa tidak merasa bosan menaati peraturan"
+        ],
+        answer: [0],
+        explanation: "Dari minggu ketiga (98%) ke minggu keempat (92%) terjadi penurunan 6%. Melakukan refleksi bersama sebelum memasuki minggu keempat adalah langkah preventif cerdas untuk menjaga konsistensi ketaatan terhadap aturan."
+      },
+
+      // SOAL 20 (C3 - Sedang - PG)
+      {
+        id: 20,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pg",
+        cognitive: "C3 (Aplikasi)",
+        difficulty: "Sedang",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan ilustrasi kegiatan rutin di lingkungan sekolah berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-blue-300 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#eff6ff"/>
+                  <!-- Tiang & Bendera Merah Putih -->
+                  <line x1="52" y1="18" x2="52" y2="118" stroke="#475569" stroke-width="3"/>
+                  <rect x="52" y="20" width="44" height="14" fill="#dc2626"/>
+                  <rect x="52" y="34" width="44" height="14" fill="#ffffff"/>
+                  <!-- Siswa Hormat Bendera -->
+                  <circle cx="115" cy="64" r="10" fill="#1d4ed8"/>
+                  <path d="M100 112 C100 84 130 84 130 112 Z" fill="#2563eb"/>
+                  <path d="M126 88 L134 62 L123 62" stroke="#1d4ed8" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <text x="90" y="130" font-size="7" font-weight="bold" fill="#1e3a8a" text-anchor="middle">UPACARA BENDERA SENIN</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Upacara Bendera (Kemendikbudristek, 2022)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Setiap hari Senin pagi dan hari besar nasional, seluruh warga sekolah mengikuti upacara bendera dengan tertib dan khidmat. Melalui amanat pembina upacara dan penghormatan terhadap Sang Merah Putih, tumbuh rasa cinta tanah air serta kedisiplinan pada diri peserta didik.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Mengikuti upacara bendera dengan khidmat di sekolah merupakan wujud nyata pelaksanaan amanat UUD NRI Tahun 1945 di lingkungan sekolah, khususnya ....",
+        options: [
+          "Pasal 30 ayat (1) mengenai hak dan kewajiban warga negara dalam upaya bela negara",
+          "Pasal 22E ayat (1) mengenai penyelenggaraan pemilihan umum setiap lima tahun sekali",
+          "Pasal 33 ayat (3) mengenai penguasaan kekayaan alam negara untuk kemakmuran rakyat",
+          "Pasal 28F mengenai hak berkomunikasi dan memperoleh informasi melalui saluran digital"
+        ],
+        answer: [0],
+        explanation: "Mengikuti upacara bendera setiap Senin dan hari besar nasional merupakan bagian dari pembinaan karakter cinta tanah air dan bela negara sebagaimana diamanatkan Pasal 30 ayat (1) UUD NRI Tahun 1945."
+      },
+
+      // SOAL 21 (C4 - Sulit - PGK)
+      {
+        id: 21,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah tiga perilaku yang paling tepat!",
+        stimulus: `
+          <div class="bg-sky-50/70 border border-sky-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-sky-950 mb-2">Cermati uraian mengenai penerapan UUD NRI Tahun 1945 di lingkungan keluarga dan masyarakat berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Pelaksanaan UUD NRI Tahun 1945 tidak hanya menjadi tugas lembaga tinggi negara, tetapi juga dimulai dari kebiasaan sehari-hari di rumah dan lingkungan tempat tinggal warga negara.
+            </p>
+          </div>
+        `,
+        question: "Pilihlah tiga tindakan nyata di lingkungan keluarga dan masyarakat yang mencerminkan pelaksanaan UUD NRI Tahun 1945!",
+        options: [
+          "Bermusyawarah dengan anggota keluarga saat menentukan pembagian tugas rumah tangga sehari-hari",
+          "Berpartisipasi aktif menjaga keamanan lingkungan melalui kegiatan siskamling bersama warga sekitar",
+          "Menghormati hak beribadah tetangga yang berbeda keyakinan serta membantu warga yang tertimpa musibah",
+          "Menolak ikut kerja bakti lingkungan dengan alasan sudah membayar pajak penghasilan kepada negara"
+        ],
+        answer: [0, 1, 2],
+        explanation: "Pernyataan 1 (musyawarah keluarga), 2 (siskamling/pertahanan keamanan lingkungan), dan 3 (toleransi Pasal 29 & kemanusiaan) semuanya merupakan wujud nyata melaksanakan UUD NRI Tahun 1945 di tempat tinggal."
+      },
+
+      // SOAL 22 (C4 - Sedang - PGK)
+      {
+        id: 22,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pgk",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sedang",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua pernyataan yang paling tepat!",
+        stimulus: `
+          <div class="bg-white border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan ilustrasi partisipasi warga negara dalam pemilihan umum berikut!</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <div class="shrink-0 text-center">
+                <svg class="w-36 h-28 rounded-xl border border-blue-200 shadow-xs" viewBox="0 0 180 140" fill="none">
+                  <rect width="180" height="140" fill="#dbeafe"/>
+                  <!-- Bilik & Kotak Suara KPU -->
+                  <rect x="58" y="58" width="64" height="52" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+                  <line x1="78" y1="58" x2="102" y2="58" stroke="#1e3a8a" stroke-width="3.5"/>
+                  <!-- Surat Suara -->
+                  <rect x="82" y="34" width="16" height="22" fill="#fde047" stroke="#b45309" stroke-width="1.2"/>
+                  <text x="90" y="88" font-size="8" font-weight="bold" fill="#1e40af" text-anchor="middle">KOTAK SUARA</text>
+                  <text x="90" y="128" font-size="7" font-weight="bold" fill="#1e3a8a" text-anchor="middle">KEDAULATAN RAKYAT</text>
+                </svg>
+                <span class="block text-[10px] text-slate-500 mt-1">Ilustrasi Pemilu (Adaptasi Detik.com, 2021)</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Warga negara yang telah memenuhi syarat usia (17 tahun atau sudah menikah) menggunakan hak pilihnya secara langsung, umum, bebas, rahasia, jujur, dan adil untuk memilih Presiden, anggota DPR, DPD, serta DPRD.
+              </p>
+            </div>
+          </div>
+        `,
+        question: "Pilihlah dua pernyataan yang tepat mengenai keterkaitan partisipasi pemilu dengan pelaksanaan UUD NRI Tahun 1945!",
+        options: [
+          "Mewujudkan amanat Pasal 1 ayat (2) UUD NRI Tahun 1945 bahwa kedaulatan berada di tangan rakyat",
+          "Pelajar SMP dapat berlatih nilai pemilu melalui pemilihan ketua OSIS yang jujur, adil, dan bebas paksaan",
+          "Warga negara yang tidak menggunakan hak pilihnya otomatis kehilangan status kewarganegaraan Indonesia",
+          "Pemilihan umum diselenggarakan setiap sepuluh tahun sekali untuk menghemat anggaran belanja negara"
+        ],
+        answer: [0, 1],
+        explanation: "Pernyataan 1 dan 2 benar: Pemilu adalah wujud nyata kedaulatan rakyat (Pasal 1 ayat 2) dan bagi pelajar SMP nilai-nilainya dapat dilatih sejak dini melalui pemilihan ketua OSIS/ketua kelas."
+      },
+
+      // SOAL 23 (C5 - Sangat Sulit - PG)
+      {
+        id: 23,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pg",
+        cognitive: "C5 (Evaluasi)",
+        difficulty: "Sangat Sulit",
+        stimulus: `
+          <div class="bg-indigo-50/70 border border-indigo-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-indigo-950 mb-2">Cermati skenario perdebatan mengenai perubahan konstitusi berikut ini!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Dalam sebuah diskusi pemuda, seorang peserta berpendapat bahwa Pembukaan UUD NRI Tahun 1945 sebaiknya ikut diubah menyesuaikan kondisi ekonomi global modern, sama seperti pasal-pasal dalam batang tubuh yang telah mengalami empat kali amendemen.
+            </p>
+          </div>
+        `,
+        question: "Argumen evaluasi yang paling tepat untuk meluruskan pendapat peserta diskusi tersebut berdasarkan ketatanegaraan Indonesia adalah ....",
+        options: [
+          "Pembukaan memuat Pancasila dan cita-cita berdirinya negara sehingga mengubahnya sama dengan membubarkan NKRI",
+          "Pembukaan UUD 1945 hanya dapat diubah apabila disetujui oleh seluruh kepala daerah tingkat kabupaten/kota",
+          "seluruh pasal dalam batang tubuh UUD 1945 juga dilarang diubah oleh lembaga negara mana pun selamanya",
+          "perubahan ekonomi global tidak memerlukan penyesuaian peraturan perundang-undangan di dalam negeri"
+        ],
+        answer: [0],
+        explanation: "Pembukaan UUD NRI Tahun 1945 memuat kesepakatan awal berdirinya negara merdeka, tujuan negara, dan Pancasila sebagai dasar negara. Mengubah Pembukaan berarti meniadakan kesepakatan awal dan membubarkan NKRI."
+      },
+
+      // SOAL 24 (C4 - Sulit - PG)
+      {
+        id: 24,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pg",
+        cognitive: "C4 (Analisis)",
+        difficulty: "Sulit",
+        stimulus: `
+          <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Perhatikan hubungan antara Pasal 27 ayat (1) dan ayat (3) UUD NRI Tahun 1945 dengan perilaku warga negara berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Pasal 27 ayat (1) UUD NRI Tahun 1945 menegaskan bahwa segala warga negara bersamaan kedudukannya di dalam hukum dan pemerintahan dan wajib menjunjung hukum dan pemerintahan itu dengan tidak ada kecualinya. Sementara Pasal 27 ayat (3) menyatakan setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara.
+            </p>
+          </div>
+        `,
+        question: "Wujud perilaku pelajar SMP yang mencerminkan keterpaduan amanat Pasal 27 ayat (1) dan ayat (3) UUD NRI Tahun 1945 adalah ....",
+        options: [
+          "menaati aturan lalu lintas serta belajar dengan tekun untuk mempersiapkan diri membangun bangsa",
+          "menuntut perlindungan hukum dari aparat kepolisian tanpa mematuhi tata tertib lingkungan sekitar",
+          "mengikuti kegiatan ekstrakurikuler olahraga hanya apabila dijanjikan hadiah beasiswa oleh sekolah",
+          "menyerahkan seluruh tugas menjaga keamanan dan ketertiban lingkungan kepada petugas keamanan saja"
+        ],
+        answer: [0],
+        explanation: "Menaati hukum/peraturan (Pasal 27 ayat 1) dan belajar giat serta berprestasi sesuai profesi pelajar sebagai bentuk bela negara (Pasal 27 ayat 3) adalah perwujudan nyata konstitusi bagi siswa."
+      },
+
+      // SOAL 25 (C6 - Sangat Sulit - PGK)
+      {
+        id: 25,
+        subbab: "C. Berani Menjalankan UUD NRI Tahun 1945 di Lingkungan Tempat Tinggal",
+        type: "pgk",
+        cognitive: "C6 (Kreasi)",
+        difficulty: "Sangat Sulit",
+        instructionText: "PILIHAN GANDA KOMPLEKS — Pilihlah dua gagasan kampanye yang paling tepat!",
+        stimulus: `
+          <div class="bg-blue-50/80 border border-blue-300 rounded-xl p-4">
+            <p class="text-xs sm:text-sm font-bold text-blue-950 mb-2">Cermati tantangan kesadaran konstitusi di kalangan pelajar SMP berikut!</p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Banyak pelajar mengira bahwa menjalankan UUD NRI Tahun 1945 hanya dilakukan oleh Presiden, DPR, atau hakim di pengadilan. Untuk meluruskan pemahaman tersebut, OSIS SMP Merdeka mengadakan lomba kampanye kreatif bertema <em>"Aku Bangga Menjalankan UUD 1945 di Rumah, Sekolah, dan Masyarakat"</em>.
+            </p>
+          </div>
+        `,
+        question: "Jika kamu merancang karya kampanye untuk lomba tersebut, pilihlah dua pesan tindakan nyata yang paling tepat disosialisasikan kepada teman-teman sebaya!",
+        options: [
+          "Menjaga fasilitas kelas, menghormati guru dan teman, serta menyelesaikan masalah lewat musyawarah",
+          "Menjaga kebersihan lingkungan tempat tinggal, santun kepada tetangga, dan bijak bermedia sosial",
+          "Menghafalkan seluruh nomor urut pasal UUD 1945 tanpa perlu mematuhi jadwal piket harian kelas",
+          "Membentuk kelompok pengawas rahasia untuk mencatat kesalahan pribadi teman di luar lingkungan sekolah"
+        ],
+        answer: [0, 1],
+        explanation: "Gagasan 1 dan 2 langsung menerjemahkan nilai-nilai UUD NRI Tahun 1945 ke dalam tindakan nyata yang membumi bagi pelajar SMP di lingkungan sekolah, rumah, dan masyarakat."
+      }
+    ];
+
+    // ==================== STATE & PENGACAKAN (FISHER-YATES) ====================
+    let questionsData = [];
+    let currentMode = 'belajar'; // 'belajar' | 'latihan'
+    let currentIndex = 0;
+    let userAnswers = [];
+    let checkedStatus = [];
+    let doubtStatus = [];
+    let isReviewMode = false;
+    let timerSeconds = 60 * 60;
+    let timerInterval = null;
+    let pendingModalAction = null;
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function prepareRandomizedQuestions() {
+      // Acak urutan soal dan acak posisi opsi A, B, C, D per soal sambil melacak kunci jawaban baru
+      const shuffledQs = shuffleArray(baseQuestionsData);
+      questionsData = shuffledQs.map((q) => {
+        const indexedOptions = q.options.map((text, originalIdx) => ({
+          text,
+          isCorrect: q.answer.includes(originalIdx)
+        }));
+        const shuffledOptions = shuffleArray(indexedOptions);
+        const newOptions = shuffledOptions.map(item => item.text);
+        const newAnswer = shuffledOptions
+          .map((item, newIdx) => (item.isCorrect ? newIdx : -1))
+          .filter(idx => idx !== -1);
+
+        return {
+          ...q,
+          options: newOptions,
+          answer: newAnswer
+        };
+      });
+    }
+
+    // ==================== FUNGSI NAVIGASI LAYAR ====================
+    function startQuiz(mode) {
+      prepareRandomizedQuestions();
+      currentMode = mode;
+      currentIndex = 0;
+      userAnswers = Array.from({ length: questionsData.length }, () => []);
+      checkedStatus = Array(questionsData.length).fill(false);
+      doubtStatus = Array(questionsData.length).fill(false);
+      isReviewMode = false;
+
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      const timerBox = document.getElementById('timer-box');
+      const finishBtn = document.getElementById('finish-btn');
+      const legendDoubt = document.getElementById('legend-doubt');
+      const legendEval = document.getElementById('legend-eval');
+
+      clearInterval(timerInterval);
+
+      if (mode === 'belajar') {
+        modeBadge.textContent = 'MODE BELAJAR (LANGSUNG PEMBAHASAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-sky-100 text-sky-900 border border-sky-300';
+        timerBox.classList.add('hidden');
+        timerBox.classList.remove('flex');
+        finishBtn.textContent = 'Lihat Rekap Skor';
+        legendDoubt.classList.add('hidden');
+        legendEval.classList.remove('hidden');
+      } else {
+        modeBadge.textContent = 'MODE LATIHAN (SIMULASI UJIAN)';
+        modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-blue-900 text-blue-50 border border-blue-950';
+        timerSeconds = 60 * 60;
+        updateTimerDisplay();
+        timerBox.classList.remove('hidden');
+        timerBox.classList.add('flex');
+        finishBtn.textContent = 'Selesai & Kumpulkan';
+        legendDoubt.classList.remove('hidden');
+        legendEval.classList.add('hidden');
+        startTimer();
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        timerSeconds--;
+        updateTimerDisplay();
+        if (timerSeconds <= 0) {
+          clearInterval(timerInterval);
+          submitQuiz();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSeconds / 60);
+      const s = timerSeconds % 60;
+      const display = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      const el = document.getElementById('timer-display');
+      el.textContent = display;
+      if (timerSeconds <= 300) {
+        el.parentElement.classList.add('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      } else {
+        el.parentElement.classList.remove('bg-rose-100', 'border-rose-400', 'text-rose-800');
+      }
+    }
+
+    // ==================== RENDER SOAL ====================
+    function renderQuestion() {
+      const q = questionsData[currentIndex];
+      const letters = ['A', 'B', 'C', 'D'];
+
+      // Header badges
+      document.getElementById('q-number-badge').textContent = `Soal ${currentIndex + 1} dari ${questionsData.length}`;
+      document.getElementById('q-type-badge').textContent = q.type === 'pg' ? 'Pilihan Ganda' : 'Pilihan Ganda Kompleks';
+      document.getElementById('q-cog-badge').textContent = q.cognitive;
+      document.getElementById('q-diff-badge').textContent = q.difficulty;
+
+      // Instruksi PG Kompleks
+      const pgkInst = document.getElementById('pgk-instruction');
+      const pgkInstText = document.getElementById('pgk-instruction-text');
+      if (q.type === 'pgk') {
+        pgkInst.classList.remove('hidden');
+        pgkInstText.textContent = q.instructionText || 'PILIHAN GANDA KOMPLEKS — Pilihlah lebih dari satu pernyataan yang benar!';
+      } else {
+        pgkInst.classList.add('hidden');
+      }
+
+      // Stimulus & Pertanyaan
+      document.getElementById('stimulus-container').innerHTML = q.stimulus;
+      document.getElementById('question-text').innerHTML = q.question;
+
+      // Status lock
+      const isLocked = (currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode;
+      const selected = userAnswers[currentIndex];
+
+      // Render Opsi
+      const optionsContainer = document.getElementById('options-container');
+      optionsContainer.innerHTML = '';
+
+      q.options.forEach((optText, idx) => {
+        const isSelected = selected.includes(idx);
+        const isCorrectOpt = q.answer.includes(idx);
+
+        let cardClass = 'option-card w-full text-left p-3.5 sm:p-4 rounded-xl border-2 flex items-start gap-3 cursor-pointer ';
+        let badgeClass = 'w-7 h-7 rounded-lg flex items-center justify-center font-extrabold text-xs shrink-0 mt-0.5 ';
+        let statusTag = '';
+
+        if (isLocked) {
+          cardClass += 'disabled-opt cursor-default ';
+          if (isCorrectOpt && isSelected) {
+            cardClass += 'bg-emerald-50 border-emerald-500 text-emerald-950';
+            badgeClass += 'bg-emerald-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">✓ Benar</span>';
+          } else if (isCorrectOpt && !isSelected) {
+            cardClass += 'bg-emerald-50/60 border-emerald-400 border-dashed text-emerald-900';
+            badgeClass += 'bg-emerald-500 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-emerald-700 shrink-0">Kunci Jawaban</span>';
+          } else if (!isCorrectOpt && isSelected) {
+            cardClass += 'bg-rose-50 border-rose-500 text-rose-950';
+            badgeClass += 'bg-rose-600 text-white';
+            statusTag = '<span class="ml-auto text-xs font-bold text-rose-700 shrink-0">✕ Pilihanmu</span>';
+          } else {
+            cardClass += 'bg-slate-50/70 border-slate-200 text-slate-500';
+            badgeClass += 'bg-slate-200 text-slate-600';
+          }
+        } else {
+          if (isSelected) {
+            cardClass += 'bg-blue-50 border-blue-600 text-blue-950 shadow-xs';
+            badgeClass += 'bg-blue-700 text-white';
+          } else {
+            cardClass += 'bg-white border-slate-200 hover:border-blue-400 hover:bg-blue-50/30 text-slate-800';
+            badgeClass += 'bg-blue-100 text-blue-900';
+          }
+        }
+
+        const inputIndicator = q.type === 'pg'
+          ? `<span class="${badgeClass}">${letters[idx]}</span>`
+          : `<span class="${badgeClass}">${isSelected ? '✓' : letters[idx]}</span>`;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = cardClass;
+        btn.disabled = isLocked;
+        btn.onclick = () => selectOption(idx);
+        btn.innerHTML = `
+          ${inputIndicator}
+          <span class="text-xs sm:text-sm leading-relaxed font-medium">${optText}</span>
+          ${statusTag}
+        `;
+        optionsContainer.appendChild(btn);
+      });
+
+      // Tombol kontrol bawah
+      const checkBtn = document.getElementById('check-answer-btn');
+      const doubtWrap = document.getElementById('doubt-checkbox-wrap');
+      const doubtCb = document.getElementById('doubt-checkbox');
+
+      if (currentMode === 'belajar' && !isReviewMode) {
+        doubtWrap.classList.add('hidden');
+        if (!checkedStatus[currentIndex]) {
+          checkBtn.classList.remove('hidden');
+          checkBtn.disabled = selected.length === 0;
+          checkBtn.className = selected.length === 0
+            ? 'px-4 py-2.5 rounded-xl bg-slate-300 text-slate-500 font-bold text-xs sm:text-sm cursor-not-allowed'
+            : 'px-4 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer';
+        } else {
+          checkBtn.classList.add('hidden');
+        }
+      } else if (currentMode === 'latihan' && !isReviewMode) {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.remove('hidden');
+        doubtCb.checked = doubtStatus[currentIndex];
+      } else {
+        checkBtn.classList.add('hidden');
+        doubtWrap.classList.add('hidden');
+      }
+
+      // Tombol Prev / Next
+      document.getElementById('prev-btn').disabled = currentIndex === 0;
+      document.getElementById('next-btn').disabled = currentIndex === questionsData.length - 1;
+
+      // Render Kotak Pembahasan
+      renderExplanationBox(isLocked);
+    }
+
+    function selectOption(optIdx) {
+      const q = questionsData[currentIndex];
+      if ((currentMode === 'belajar' && checkedStatus[currentIndex]) || isReviewMode) return;
+
+      if (q.type === 'pg') {
+        userAnswers[currentIndex] = [optIdx];
+      } else {
+        const current = [...userAnswers[currentIndex]];
+        const pos = current.indexOf(optIdx);
+        if (pos > -1) {
+          current.splice(pos, 1);
+        } else {
+          current.push(optIdx);
+        }
+        current.sort((a, b) => a - b);
+        userAnswers[currentIndex] = current;
+      }
+
+      renderQuestion();
+      renderNavGrid();
+      updateProgressText();
+    }
+
+    function checkCurrentAnswer() {
+      if (userAnswers[currentIndex].length === 0) return;
+      checkedStatus[currentIndex] = true;
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function toggleDoubt() {
+      doubtStatus[currentIndex] = document.getElementById('doubt-checkbox').checked;
+      renderNavGrid();
+    }
+
+    function isAnswerCorrect(index) {
+      const q = questionsData[index];
+      const u = userAnswers[index];
+      if (u.length !== q.answer.length) return false;
+      const sortedU = [...u].sort((a, b) => a - b);
+      const sortedA = [...q.answer].sort((a, b) => a - b);
+      return sortedU.every((val, i) => val === sortedA[i]);
+    }
+
+    function renderExplanationBox(show) {
+      const box = document.getElementById('explanation-box');
+      if (!show) {
+        box.classList.add('hidden');
+        return;
+      }
+
+      const q = questionsData[currentIndex];
+      const correct = isAnswerCorrect(currentIndex);
+      const letters = ['A', 'B', 'C', 'D'];
+      const keyLabels = q.answer.map(i => letters[i]).join(', ');
+      const userLabels = userAnswers[currentIndex].length > 0
+        ? userAnswers[currentIndex].map(i => letters[i]).join(', ')
+        : 'Tidak dijawab';
+
+      box.classList.remove('hidden');
+      if (correct) {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-emerald-50/80 border-emerald-400 text-emerald-950';
+        document.getElementById('exp-status-icon').textContent = '🎉';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu BENAR!';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-emerald-800 mb-2';
+      } else {
+        box.className = 'mt-5 rounded-2xl p-4 sm:p-5 border-2 bg-rose-50/80 border-rose-400 text-rose-950';
+        document.getElementById('exp-status-icon').textContent = '💡';
+        document.getElementById('exp-status-title').textContent = 'Jawabanmu KURANG TEPAT';
+        document.getElementById('exp-key-text').className = 'text-xs sm:text-sm font-bold text-rose-800 mb-2';
+      }
+
+      document.getElementById('exp-key-text').textContent = `Kunci Jawaban: ${keyLabels} | Jawabanmu: ${userLabels}`;
+      document.getElementById('exp-detail-text').innerHTML = `<strong>Pembahasan:</strong> ${q.explanation}`;
+    }
+
+    // ==================== NAVIGASI NOMOR ====================
+    function renderNavGrid() {
+      const grid = document.getElementById('nav-grid');
+      grid.innerHTML = '';
+
+      questionsData.forEach((q, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = idx + 1;
+        btn.onclick = () => {
+          currentIndex = idx;
+          renderQuestion();
+          renderNavGrid();
+        };
+
+        const isCurrent = idx === currentIndex;
+        const isAnswered = userAnswers[idx].length > 0;
+        const isEvaluated = (currentMode === 'belajar' && checkedStatus[idx]) || isReviewMode;
+
+        let cls = 'h-9 rounded-xl font-bold text-xs transition flex items-center justify-center cursor-pointer ';
+
+        if (isCurrent) {
+          cls += 'ring-2 ring-offset-1 ring-blue-700 ';
+        }
+
+        if (isEvaluated) {
+          if (isAnswerCorrect(idx)) {
+            cls += 'bg-emerald-500 text-white';
+          } else {
+            cls += 'bg-rose-500 text-white';
+          }
+        } else if (currentMode === 'latihan' && doubtStatus[idx]) {
+          cls += 'bg-amber-300 border border-amber-600 text-amber-950';
+        } else if (isAnswered) {
+          cls += 'bg-blue-100 border border-blue-400 text-blue-950';
+        } else if (isCurrent) {
+          cls += 'bg-blue-700 text-white';
+        } else {
+          cls += 'bg-slate-100 border border-slate-300 text-slate-700 hover:bg-blue-50';
+        }
+
+        btn.className = cls;
+        grid.appendChild(btn);
+      });
+    }
+
+    function updateProgressText() {
+      const answeredCount = userAnswers.filter(a => a.length > 0).length;
+      document.getElementById('progress-text').textContent = `Terjawab: ${answeredCount} / ${questionsData.length}`;
+    }
+
+    function prevQuestion() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    function nextQuestion() {
+      if (currentIndex < questionsData.length - 1) {
+        currentIndex++;
+        renderQuestion();
+        renderNavGrid();
+      }
+    }
+
+    // ==================== MODAL & PENYELESAIAN ====================
+    function openSwitchModal() {
+      document.getElementById('modal-title').textContent = 'Ganti Mode atau Reset Kuis?';
+      document.getElementById('modal-message').textContent = 'Progres jawaban saat ini akan diatur ulang dan urutan soal serta opsi jawaban akan diacak kembali saat sesi dimulai. Lanjutkan?';
+      pendingModalAction = () => {
+        clearInterval(timerInterval);
+        resetToHome();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function openFinishModal() {
+      const unanswered = userAnswers.filter(a => a.length === 0).length;
+      document.getElementById('modal-title').textContent = 'Selesaikan & Lihat Hasil?';
+      document.getElementById('modal-message').textContent = unanswered > 0
+        ? `Masih terdapat ${unanswered} soal yang belum kamu jawab. Apakah kamu yakin ingin menyelesaikan sesi sekarang?`
+        : 'Semua soal telah kamu jawab. Klik "Ya, Lanjutkan" untuk melihat skor akhir dan analisis pembahasan.';
+      pendingModalAction = () => {
+        submitQuiz();
+      };
+      document.getElementById('custom-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('custom-modal').classList.add('hidden');
+      pendingModalAction = null;
+    }
+
+    document.getElementById('modal-confirm-btn').onclick = function () {
+      if (pendingModalAction) {
+        const fn = pendingModalAction;
+        closeModal();
+        fn();
+      }
+    };
+
+    function submitQuiz() {
+      clearInterval(timerInterval);
+      isReviewMode = true;
+
+      let totalCorrect = 0;
+      let pgCorrect = 0;
+      let pgkCorrect = 0;
+
+      const subbabStats = {};
+
+      questionsData.forEach((q, idx) => {
+        if (!subbabStats[q.subbab]) {
+          subbabStats[q.subbab] = { total: 0, correct: 0 };
+        }
+        subbabStats[q.subbab].total++;
+
+        if (isAnswerCorrect(idx)) {
+          totalCorrect++;
+          subbabStats[q.subbab].correct++;
+          if (q.type === 'pg') pgCorrect++;
+          else pgkCorrect++;
+        }
+      });
+
+      const score = Math.round((totalCorrect / questionsData.length) * 100);
+      let predicate = 'Perlu Bimbingan';
+      if (score >= 90) predicate = 'Sangat Baik (Mahir)';
+      else if (score >= 75) predicate = 'Baik (Cakap)';
+      else if (score >= 60) predicate = 'Cukup (Layak)';
+
+      document.getElementById('final-score').textContent = score;
+      document.getElementById('final-predicate').textContent = predicate;
+      document.getElementById('stat-correct').textContent = totalCorrect;
+      document.getElementById('stat-wrong').textContent = questionsData.length - totalCorrect;
+      document.getElementById('stat-pg').textContent = `${pgCorrect}/18`;
+      document.getElementById('stat-pgk').textContent = `${pgkCorrect}/7`;
+
+      // Render analisis per subbab
+      const topicContainer = document.getElementById('topic-analysis');
+      topicContainer.innerHTML = '';
+
+      Object.keys(subbabStats).sort().forEach((subbab) => {
+        const data = subbabStats[subbab];
+        const pct = Math.round((data.correct / data.total) * 100);
+        const row = document.createElement('div');
+        row.innerHTML = `
+          <div class="flex justify-between font-semibold text-slate-800 mb-1">
+            <span>${subbab}</span>
+            <span>${data.correct}/${data.total} Soal (${pct}%)</span>
+          </div>
+          <div class="w-full h-2.5 bg-blue-200/70 rounded-full overflow-hidden">
+            <div class="h-full bg-blue-700 rounded-full" style="width: ${pct}%"></div>
+          </div>
+        `;
+        topicContainer.appendChild(row);
+      });
+
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function enterReviewMode() {
+      isReviewMode = true;
+      currentIndex = 0;
+
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+
+      const modeBadge = document.getElementById('mode-badge');
+      modeBadge.textContent = 'MODE TINJAUAN PEMBAHASAN LENGKAP';
+      modeBadge.className = 'px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wider bg-emerald-100 text-emerald-900 border border-emerald-300';
+
+      document.getElementById('timer-box').classList.add('hidden');
+      document.getElementById('timer-box').classList.remove('flex');
+      document.getElementById('legend-doubt').classList.add('hidden');
+      document.getElementById('legend-eval').classList.remove('hidden');
+
+      renderQuestion();
+      renderNavGrid();
+    }
+
+    function resetToHome() {
+      clearInterval(timerInterval);
+      isReviewMode = false;
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('result-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
